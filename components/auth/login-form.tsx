@@ -54,9 +54,9 @@ export const LoginForm = () => {
     };
     return (
         <CardWrapper
-            headerLabel="Welcome Back"
+            headerLabel="Welcome Back PTCians!"
             backButtonLabel="Don't have account?"
-            backButtonHref="/auth/register"
+            backButtonHref="/register"
             showSocial
         >
             <Form {...form}>
@@ -71,13 +71,13 @@ export const LoginForm = () => {
                             name="email"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Email</FormLabel>
+                                    <FormLabel className="font-bold">Email</FormLabel>
                                     <FormControl>
                                         <Input
                                             {...field}
                                             disabled={isPending}
                                             type="email"
-                                            placeholder="klmallari@gmail.com"
+                                            placeholder="email"
                                         />
                                     </FormControl>
                                     <FormMessage />
@@ -89,13 +89,13 @@ export const LoginForm = () => {
                             name="password"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Password</FormLabel>
+                                    <FormLabel className="font-bold">Password</FormLabel>
                                     <FormControl>
                                         <Input
                                             {...field}
                                             disabled={isPending}
                                             type="password"
-                                            placeholder="********"
+                                            placeholder="password"
                                         />
                                     </FormControl>
                                     <FormMessage />

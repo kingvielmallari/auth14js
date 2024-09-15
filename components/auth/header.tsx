@@ -20,7 +20,7 @@ export const Header = ({
                 "text-3xl font-semibold",
                 font.className
             )}>
-              💚PTC DRMS
+              Login
             </h1>
             <p className="text-muted-foreground text-sm">
                 {label}

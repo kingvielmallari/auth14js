@@ -1,33 +1,24 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+// Import Inter font with regular and bold weights
+const inter = Inter({
+  subsets: ["latin"] // Regular (400) and Bold (700) Define font variable
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "PTC - DRMS",
   description: "Document Management System",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
         {children}
       </body>
     </html>

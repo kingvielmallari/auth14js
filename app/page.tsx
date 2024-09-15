@@ -1,15 +1,16 @@
 import { LoginButton } from '@/components/auth/signin-button';
 import { Button } from '@/components/ui/button';
 
+
 export default function Home() {
   return (
-    <main className="flex h-full flex-col items-center justify-center bg-sky-500">
-      <div className="space-y-6 text-center">
+    <main className="flex h-full flex-col items-center justify-center ">
+      <div className="space-y-7 text-center">
         <h1 className="text-6xl font-semibold text-white drop-shadow-md">
-          🎂Auth
+          💚PTC - DRMS💚
         </h1>
         <p className="text-white text-lg">
-          A Simple authentication service
+          Welcome To PTC Document Request Management System
         </p>
         <div>
           <LoginButton>
@@ -20,5 +21,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+   
   );
 }
