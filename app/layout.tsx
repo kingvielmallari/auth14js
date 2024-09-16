@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./globals.css"
+import  StarBackground from "@/components/main/StarBackground";
 
 
 const inter = Inter({
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#030016] overflow-y-scroll overflow-x-hidden`}>
+        <StarBackground />
         {children}
       </body>
     </html>

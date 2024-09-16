@@ -1,3 +1,6 @@
+import HeroContent from "../sub/herocontent";
+
+
 const Hero = () => {
     return ( 
         <div className="relative flex flex-col h-full w-full">
@@ -9,6 +12,9 @@ const Hero = () => {
             >
                 <source src="/bh.webm" type="video/webm" />
             </video>
+
+            <HeroContent />
+
          
         </div>
      );
