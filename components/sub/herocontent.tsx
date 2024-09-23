@@ -38,7 +38,7 @@ const HeroContent = () => {
               {" "}
               PTC{" "}
             </span>
-            Document Request Management System V2!
+            Document Request Management System V3!
           </span>
         </motion.div>
 
